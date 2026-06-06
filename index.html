@@ -228,7 +228,7 @@
   
   <div id="page1" class="page active">
     <div class="card">
-      <span class="emoji">🎮</span>
+      <span class="emoji"><p>&#128512;</p></span>
       <h1>Will you play a game with me?</h1>
       <div class="button-group">
         <button id="yesBtn" onclick="handleYes()">Yes!</button>
@@ -377,7 +377,7 @@
   function sendEmail() {
     const formData = new FormData();
     formData.append('email', YOUR_EMAIL);
-    formData.append('subject', '🎮 Game Challenge Scheduled!');
+    formData.append('subject', '<p>&#128512;</p> Game Challenge Scheduled!');
     formData.append('message', `New game scheduled!\n\nDay: ${selectedDay}\nTime: ${selectedTime}\n\nGet ready for an epic match! 👾`);
     
     fetch('https://formspree.io/f/xyzqwert', {
